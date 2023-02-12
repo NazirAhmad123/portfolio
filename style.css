@@ -558,26 +558,4 @@
                                         margin-left: 25%;
                                       }
                                     }
-                                .form-group {
-  margin-bottom: 1rem;
-}
-
-.form-control {
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: .25rem;
-  border: 1px solid #ced4da;
-}
-
-.btn {
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: .25rem;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  margin-left: 45%;
-}
+                                
