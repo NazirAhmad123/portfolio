@@ -424,7 +424,10 @@
                                     @media (max-width: 991px) {
                                       header {
                                         padding: 18px 4%;
-      
+                                      about-image.png {
+                                        height: 150;
+                                        width:150;
+                                      }
                                       }
                                    p {
                                      margin: 10px;
