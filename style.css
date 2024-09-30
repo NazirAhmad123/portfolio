@@ -424,11 +424,16 @@
                                     @media (max-width: 991px) {
                                       header {
                                         padding: 18px 4%;
+      
                                       }
-                                   
+                                   p {
+                                     margin: 10px;
+                                   }
                                       section {
                                         padding: 50px 4%;
-                                      }
+                                       
+              
+                                                              }
                                     }
                                    
                                     @media (max-width: 881px) {
