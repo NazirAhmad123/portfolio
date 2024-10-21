@@ -25,7 +25,7 @@ darkmode.onclick = () => {
     document.body.classList.remove("active");
   }
 };
-
+/*
 document.querySelector('.contact-button').addEventListener('click', function() {
 
     event.preventDefault();
@@ -42,7 +42,27 @@ document.querySelector('.contact-button').addEventListener('click', function() {
       }
     };
     xhr.send(`name=${name}&email=${email}&message=${message}`);
-  });
+  });*/
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting the default way
+
+    const formData = new FormData(this); // Get the form data
+
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', this.action, true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                console.log(xhr.responseText);
+                alert("Form submitted successfully!"); // Notify user on success
+            } else {
+                alert("Failed to submit form. Please try again later."); // Notify user on error
+            }
+        }
+    };
+    xhr.send(formData); // Send the form data
+});
 /*
 document.querySelector('.contact-button').addEventListener('click', function(event) {
     event.preventDefault(); // Prevent the default form submission
