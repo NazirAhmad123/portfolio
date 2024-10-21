@@ -44,7 +44,7 @@ document.querySelector('.contact-button').addEventListener('click', function() {
     xhr.send(`name=${name}&email=${email}&message=${message}`);
   });
 */
-document.querySelector('.contact-form form').addEventListener('submit', function(event) {
+document.querySelector('.contact-button button').addEventListener('click', function(event) {
     event.preventDefault(); // Prevent the default form submission
 
     const name = document.querySelector('input[name="name"]').value;
