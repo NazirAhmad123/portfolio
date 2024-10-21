@@ -509,7 +509,7 @@
                                    
                                       .about-img {
                                         display: flex;
-                                        justify-content: space-around;
+                                        justify-content: center;
                                       }
                                    
                                       .skills-container {
