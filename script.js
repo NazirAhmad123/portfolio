@@ -26,7 +26,7 @@ darkmode.onclick = () => {
   }
 };
 
-/*document.querySelector('.contact-button').addEventListener('click', function() {
+document.querySelector('.contact-button').addEventListener('click', function() {
 
     event.preventDefault();
     const name = document.querySelector('input[placeholder="Your Name"]').value;
@@ -42,8 +42,8 @@ darkmode.onclick = () => {
       }
     };
     xhr.send(`name=${name}&email=${email}&message=${message}`);
-  });*/
-
+  });
+/*
 document.querySelector('.contact-form form').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the default form submission
 
@@ -66,4 +66,5 @@ document.querySelector('.contact-form form').addEventListener('submit', function
     };
     xhr.send(`name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&message=${encodeURIComponent(message)}`);
 });
+*/
                                     
