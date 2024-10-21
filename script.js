@@ -25,7 +25,7 @@ darkmode.onclick = () => {
     document.body.classList.remove("active");
   }
 };
-/*
+
 document.querySelector('.contact-button').addEventListener('click', function() {
 
     event.preventDefault();
@@ -43,7 +43,7 @@ document.querySelector('.contact-button').addEventListener('click', function() {
     };
     xhr.send(`name=${name}&email=${email}&message=${message}`);
   });
-*/
+/*
 document.querySelector('.contact-button').addEventListener('click', function(event) {
     event.preventDefault(); // Prevent the default form submission
 
@@ -65,6 +65,6 @@ document.querySelector('.contact-button').addEventListener('click', function(eve
       }
     };
     xhr.send(`name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&message=${encodeURIComponent(message)}`);
-});
+});*/
 
                                     
