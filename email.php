@@ -1,5 +1,7 @@
 
 <?php
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: POST");
 /*
 if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])) {
   $name = $_POST['name'];
