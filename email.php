@@ -3,7 +3,7 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message']))
   $name = $_POST['name'];
   $email = $_POST['email'];
   $message = $_POST['message'];
-  $to = "iamnaziir@gmail.com";
+  $to = "nazir_noori@yahoo.com";
   $subject = "Website Contact Form Submission";
   $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
   $headers = "From: $email\r\n";
