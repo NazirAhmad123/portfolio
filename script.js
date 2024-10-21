@@ -26,7 +26,9 @@ darkmode.onclick = () => {
   }
 };
 
-document.querySelector('.contact-button').addEventListener('click', function() {
+/*document.querySelector('.contact-button').addEventListener('click', function() {
+
+    event.preventDefault();
     const name = document.querySelector('input[placeholder="Your Name"]').value;
     const email = document.querySelector('input[placeholder="Your Email"]').value;
     const message = document.querySelector('textarea[placeholder="Write Message Here..."]').value;
@@ -40,5 +42,28 @@ document.querySelector('.contact-button').addEventListener('click', function() {
       }
     };
     xhr.send(`name=${name}&email=${email}&message=${message}`);
-  });
+  });*/
+
+document.querySelector('.contact-form form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    const name = document.querySelector('input[name="name"]').value;
+    const email = document.querySelector('input[name="email"]').value;
+    const message = document.querySelector('textarea[name="message"]').value;
+
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', 'email.php', true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === XMLHttpRequest.DONE) {
+        if (xhr.status === 200) {
+          console.log(xhr.responseText);
+          alert(xhr.responseText); // Optionally alert the response
+        } else {
+          alert('Failed to submit the form. Please try again later.');
+        }
+      }
+    };
+    xhr.send(`name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&message=${encodeURIComponent(message)}`);
+});
                                     
