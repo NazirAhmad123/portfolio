@@ -532,9 +532,9 @@
                                         width: 300px;
                                       }
                                    
-                                      /*.contact-button {
+                                      .contact-button {
                                         margin-left: 25%;
-                                      }*/
+                                      }
                                     }
                                    
                                     @media (max-width: 340px) {
