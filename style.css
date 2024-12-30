@@ -510,9 +510,9 @@
                                       .about-img {
                                         display: flex;
                                         justify-content: center;
-                                        height: 250;
-                                        width:250;
-                                        margin-right: 3px;
+                                        height: 230;
+                                        width:230;
+                                        
                                       }
                                    
                                       .skills-container {
