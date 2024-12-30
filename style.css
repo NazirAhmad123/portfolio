@@ -510,8 +510,8 @@
                                       .about-img {
                                         display: flex;
                                         justify-content: center;
-                                       /* height: 250;
-                                        width:250;*/
+                                        height: 250;
+                                        width:250;
                                       }
                                    
                                       .skills-container {
@@ -532,9 +532,9 @@
                                         width: 300px;
                                       }
                                    
-                                      .contact-button {
+                                      /*.contact-button {
                                         margin-left: 25%;
-                                      }
+                                      }*/
                                     }
                                    
                                     @media (max-width: 340px) {
@@ -563,10 +563,7 @@
                                       .contact-button {
                                         margin-left: 25%;
                                       }
-                                      .aboutimg {
-                                        height: 330px;
-                                        width: 330px;
-                                      }
+                                  
                                       
                                     }
                                 
