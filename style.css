@@ -532,6 +532,11 @@
                                       .contact-form form {
                                         width: 300px;
                                       }
+                                      .about-text p {
+                                            font-size: var(--p-font);
+                                              font-weight: 400;
+                                              text-align: center;
+                                      }
                                    
                                       .contact-button {
                                         margin-left: 25%;
